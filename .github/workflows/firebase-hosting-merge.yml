@@ -23,6 +23,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Get dependencies
         run: cd functions && npm ci
       - name: Deploy
         uses: jonahsnider/firebase-action@1.0.7
