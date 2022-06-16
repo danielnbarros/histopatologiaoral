@@ -5,5 +5,5 @@ const functions = require("firebase-functions");
 //
 exports.helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs by alcides!", {structuredData: true});
-  response.send("Hello from Alcides2!");
+  response.send("Hello from Alcides 2!");
 });
